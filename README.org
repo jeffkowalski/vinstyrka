@@ -1,0 +1,23 @@
+#+title: hardware interface to vindstyrka, to read measurements and record to influxdb
+
+* Hardware
+https://www.amazon.com/gp/product/B081PX9YFV/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1
+
+** connections
+| D1 mini | Vindstyrka |
+|---------+------------|
+| D1      | SCL        |
+| D2      | SCA        |
+| G       | GND2       |
+| 5V      | VCC_5      |
+* Notes
+teardown: https://github.com/oleksiikutuzov/IKEA-VINDSTYRKA
+
+** Sensiron SEN54
+datasheet: https://sensirion.com/products/catalog/SEN54/
+libraries: https://registry.platformio.org/libraries/sensirion/Sensirion%20I2C%20SEN5X
+example code: https://github.com/Sensirion/arduino-i2c-sen5x/blob/master/examples/exampleUsage/exampleUsage.ino
+
+** home automation
+https://community.home-assistant.io/t/ikea-vindstyrka-esphome-integration/558347
+https://esphome.io/components/sensor/sen5x.html?highlight=sen54

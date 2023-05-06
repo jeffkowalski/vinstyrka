@@ -1,0 +1,4 @@
+/.ccls
+/.ccls-cache/
+/.pio
+/src/credentials.h

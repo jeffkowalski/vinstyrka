@@ -5,7 +5,7 @@
 #include <ESP8266HTTPClient.h>
 #include <ESP8266WiFi.h>
 
-#define SERVER "cube.local:8086"
+#define SERVER "192.168.7.207:8086"  // address of influx database
 #define RECORDING_PERIOD 5 * 60 * 1000 // record a sample measurement every five minutes
 
 class Blinker {
